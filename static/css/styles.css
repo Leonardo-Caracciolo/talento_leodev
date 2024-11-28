@@ -1,0 +1,44 @@
+/* Example of extracted styles */
+.menu {
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.menu a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+/*? CSS del SLIDER */
+#slider, #slider2 {
+  margin: 12px 0 12px 0;
+}
+
+/* Cambiar el color de relleno de la barra */
+#slider .noUi-connect,
+#slider2 .noUi-connect {
+  background: #86BC25; /* Cambia esto al color que desees */
+}
+
+/* Opcional: Cambiar el color de los manejadores */
+#slider .noUi-handle,
+#slider2 .noUi-handle {
+  width: 25px; /* Cambia esto al tamaño que desees */
+  height: 25px; /* Cambia esto al tamaño que desees */
+  background: #dddddd; /* Cambia esto al color que desees */
+  border: none; /* Elimina el borde si lo deseas */
+  cursor: pointer; /* Cambia el cursor cuando se pasa sobre el manejador */
+}

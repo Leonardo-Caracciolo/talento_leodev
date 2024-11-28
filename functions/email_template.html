@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            margin: 20px;
+        }
+
+        .header {
+            background-color: #f8f8f8;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Reporte de Personal</h1>
+        </div>
+        <div class="content">
+            <p>Estimado {{ cliente }},</p>
+            <p>Adjunto encontrará el reporte de personal con pendientes de entrega de reporte.</p>
+        </div>
+        <div class="footer">
+            <p>Saludos,<br>Equipo de Talento</p>
+        </div>
+    </div>
+</body>
+
+</html>

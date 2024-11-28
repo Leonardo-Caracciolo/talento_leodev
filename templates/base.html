@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talento Mex - TaxTech ARG</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/css/styles.css" />
+    <style>
+      body {
+        font-family: "Open Sans", Verdana, Helvetica, sans-serif;
+      }
+      .loading-spinner {
+        border: 4px solid rgba(0, 0, 0, 0.1);
+        border-left-color: #000;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="bg-black text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="#">
+          <img
+            src="../static/src/deloitte.svg"
+            alt="Deloitte Logo"
+            class="h-8"
+          />
+        </a>
+        <button
+          class="block lg:hidden px-3 py-2 border rounded text-white border-white"
+          onclick="document.getElementById('navbarNav').classList.toggle('hidden')"
+        >
+          <svg
+            class="fill-current h-3 w-3"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+        <div
+          class="hidden lg:flex lg:items-center lg:w-auto w-full"
+          id="navbarNav"
+        >
+          <ul class="lg:flex lg:justify-end text-base text-white">
+            <li id="nav-market-place" class="lg:mx-4 my-2 lg:my-0">
+              <a class="hover:text-gray-400" href="/market-place">Market Place</a>
+            </li>
+            <li id="nav-seun" class="lg:mx-4 my-2 lg:my-0">
+              <a class="hover:text-gray-400" href="/seun">Seun</a>
+            </li>
+            <li id="nav-socio" class="lg:mx-4 my-2 lg:my-0">
+              <a class="hover:text-gray-400" href="/socio">Socio</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    {% block content %}
+    {% endblock %}
+    <!-- Loading Spinner -->
+  <div
+    id="loadingSpinner"
+    class="fixed inset-0 flex items-center justify-center bg-gray-100 bg-opacity-75 hidden">
+    <div class="loading-spinner"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- CSS de noUiSlider -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.4/nouislider.min.css" rel="stylesheet">
+    <!-- JavaScript de noUiSlider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.4/nouislider.min.js"></script>
+    <script type="module" src="/static/js/slider.js"></script>
+  </div>
+  </body>
+</html>

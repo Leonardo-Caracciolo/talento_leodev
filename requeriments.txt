@@ -1,0 +1,6 @@
+fastapi
+sqlmodel
+pandas
+sqlalchemy
+jinja2
+uvicorn

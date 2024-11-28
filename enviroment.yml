@@ -1,0 +1,20 @@
+name: talento_sqlmodel
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8
+  - fastapi
+  - uvicorn
+  - sqlalchemy
+  - pandas
+  - jinja2
+  - aiofiles
+  - pydantic
+  - pytest
+  - requests
+  - openpyxl
+  - pip
+  - pip:
+      - sqlmodel
+      - email-validator

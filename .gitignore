@@ -1,0 +1,26 @@
+# Python
+*.pyc
+__pycache__/
+
+# Bases de datos
+*.sqlite
+*.db
+*.sql
+
+# Archivos de Excel
+*.xlsx
+
+# Entornos virtuales
+/.venv/
+/.vscode/
+data/inputs/test/personal.xlsx
+data/inputs/test/seun.xlsx
+data/inputs/test/utilizacion.xlsx
+data/inputs/test/validacion.xlsx
+data/inputs/test/personal.xlsx
+.env
+combined_data.json
+config.json
+data/inputs/produccion/validacion.xlsx
+database.db
+config.json
